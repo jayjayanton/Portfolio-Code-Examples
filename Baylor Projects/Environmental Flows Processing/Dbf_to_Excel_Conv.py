@@ -8,15 +8,16 @@ from simpledbf import Dbf5
 ### Set the workspace  ###
 ##########################
 
-path = r"E:\\TPWD Project\\Climate Variables\\Catchment Zonal Statistics\\ppt_excel\\ppt_excel_raw"
+path = r"E:\\TPWD Project\\Climate Variables\\Catchment Zonal Statistics\\ppt_excel\\ppt_excel_raw" # 
 
 # Path for combined excel files
-combined_path =  r'E:\\TPWD Project\\Climate Variables\\Catchment Zonal Statistics\\ppt_excel\\ppt_combined'
+combined_path =  r'E:\\TPWD Project\\Climate Variables\\Catchment Zonal Statistics\\ppt_excel\\ppt_combined' # example repository where combined excel
+                                                                                                             #files will be stored
 
 ############################
 ### Search for dbf files ###
 ############################
-directory =r"E:\\TPWD Project\\Climate Variables\\Catchment Zonal Statistics\\ppt\\Missing"
+directory =r"E:\\TPWD Project\\Climate Variables\\Catchment Zonal Statistics\\ppt\\Missing" # Example directory for location of Precipitation dbf files
 os.chdir(directory)
 dbf_filenames = sorted(glob.glob("*.dbf"))
 

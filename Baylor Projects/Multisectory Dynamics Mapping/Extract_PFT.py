@@ -1,7 +1,7 @@
-import gdal
+from osgeo import gdal
 import glob
 import os
-import osr
+from osgeo import osr
 
 prefix = 'HDF4_EOS:EOS_GRID:"'
 suffix = '":PCT_PFT'
