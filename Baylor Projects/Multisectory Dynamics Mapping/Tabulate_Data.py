@@ -14,7 +14,7 @@ arcpy.env.overwriteOutput = True
 # Folder for excel files
 Excel_Folder = r"D:\\GCAM\\Landcover\\CLM\\PFT_78\\Excel Files\\"
 
-inlayer = r"D:\\GCAM\\Landcover\\CLM\\PFT_78\\Landcover_2008.tif"
+inlayer = r"D:\\GCAM\\Landcover\\CLM\\PFT_78\\Landcover_2008.tif" # Add tif file containing Multisector basemap for CONUs for the year 2008
 zone_field = "Value"
 class_field = "Value"
 processingCellSize = 30
