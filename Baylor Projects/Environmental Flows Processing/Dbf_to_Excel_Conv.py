@@ -28,29 +28,28 @@ for file in dbf_filenames:
     # Name of File
     CleanBaseStr = os.path.splitext(basefilename)[0]
 
-    # Create Variable for Gage Number
-    # Gage = '_'.join(CleanBaseStr.split('_')[1:-1])
     # Create Variable for Year
     yearmonth = CleanBaseStr.split('_',2)[2]
     year = yearmonth[0:4]
     month = yearmonth[4:6]
-    # print(yearmonth)
+    
+
     ### Execute table to excel
     # Name Excel file
     out_xls = f"{CleanBaseStr}.txt"
-    # print(out_xls)
+   
     output_file = os.path.join(path,out_xls)
-    #
-    # # Open dbf files
+   
+    # Open dbf files
     new_df = Dbf5(file)
-    #
-    # # Conver dbf to databframe
+   
+    # Convert dbf to databframe
     df = new_df.to_dataframe()
     df['Year_Month'] = yearmonth
     df['Year'] = year
     df['Month'] = month
-    # print(df)
-    # # Save dataframe to excel
+  
+    # Save dataframe to excel
     df.to_csv(output_file)
 
         #######################################
