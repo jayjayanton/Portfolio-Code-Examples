@@ -34,7 +34,7 @@ path = os.chdir(outputdir)
 arcpy.env.workspace = outputdir
 dbf_files = sorted(glob.glob("*.dbf"))
 
-# Read USA dbf file
+# Read USA dbf file. This dbf file was an empty file covering the entire CONUS and was used as a place holder to have a unique id to compare with converted files
 USA_dbf = Dbf5(r"E:\CLM\\Raster Point Data\\USA_Raster_to_Point.dbf")  
 USA_df = USA_dbf.to_dataframe()
 USA_df['pointid']=USA_df['pointid'].astype(float)
