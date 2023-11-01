@@ -6,7 +6,7 @@ from osgeo import gdal
 import pandas as pd
 
 #################################################################################################################
-### Code was used to sort through the range within the PFT and count cell values found within each pixel type ###
+### Code was used to sort through the range within the PFT and count values found within each pixel type ###
 #################################################################################################################
 
 Tif_files = sorted(glob.glob("*.tif"))
