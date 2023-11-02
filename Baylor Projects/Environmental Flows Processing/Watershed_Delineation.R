@@ -1,6 +1,5 @@
 library(httr)
 library(jsonlite)
-library(rgdal)
 library(sp)
 library(sf)
 library(stringr)
@@ -23,17 +22,17 @@ lnfgages<-as.list(nfgages$SOURCE_FEA)
 ### Header Watershed Delineation
 headers = c(
   `accept` = 'application/json',
-  `Authorization` = 'Token c684b2f9596b47b1fe3e4c57e2a9ae6a421b345e',
+  `Authorization` = 'Unique Authorization',
   `Content-Type` = 'application/json',
-  `X-CSRFToken` = '9P7k41yjWNqVtysnv8iv2KfeW4vadHih1wKZWkN41Mln249QxEZVZHwfvKcufvBO',
+  `X-CSRFToken` = 'Your Unique Token',
   'Accept-Encoding' = 'gzip'
 )
 
 ### Header Get Watershed Job 
 headers_watershed = c('Accept-Encoding' = 'gzip',
                       `accept` = 'application/json',
-                      `Authorization` = ' Token c684b2f9596b47b1fe3e4c57e2a9ae6a421b345e',
-                      `X-CSRFToken` = '1I2YxuQlHlxpxPM09qZTlT6vEuFgucuaTpFDpN56MksR6lttbWGjiQnwdamAw0NH')
+                      `Authorization` = ' Unique Authorization',
+                      `X-CSRFToken` = 'Your Unique Token')
 
 ############################
 ### Create Watershed job ###
