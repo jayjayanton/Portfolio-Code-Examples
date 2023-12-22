@@ -11,8 +11,6 @@ import pandas as pd
 
 Tif_files = sorted(glob.glob("*.tif"))
 
-arcpy.env.workspace = r"D:\\GCAM\\Landcover\\CLM\\PFT_78\\Reexported Raster\\" # Set Arcpy Environmental Work Space
-
 Excel_Folder = r"D:\\GCAM\\Landcover\\CLM\\PFT_78\\Excel Files\\Cell Value\\" # Set Excel folder 
 
 for Name in Tif_files:
