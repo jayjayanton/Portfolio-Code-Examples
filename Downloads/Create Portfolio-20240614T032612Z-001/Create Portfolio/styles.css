@@ -8,22 +8,22 @@
 body{
     background-color: #080808;
     color: #fff ;
-    /* margin: 0;
+    margin: 0;
     width: 100vw;
-    height: 100vh; */
+    height: 100vh;
 }
 
 #header {
     width: 100vw; /*Move this value around to fix location of image  */
     height: 100vh;  
-    /*background-image: url(images/headshot.jpg);
+    /* background-image: url(images/headshot.jpg); */
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left;*/
+    background-position: left; 
 }
 
 .container {
-    padding: 10px 10%;
+    padding: 110px 110px;
  /*fix this to move logos around*/
 }
 
